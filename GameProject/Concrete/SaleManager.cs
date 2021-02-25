@@ -8,12 +8,12 @@ namespace GameProject.Concrete
 {
     class SaleManager : ISaleService
     {
-        public void CampaignSales(Game game, Gamer gamer, Campaign campaign)
+        public void CampaignSales(Gamer gamer, Game game, Campaign campaign)
         {
             Console.WriteLine(gamer.FirstName + game.GameName + campaign.CampaingnName + "aldı");
         }
 
-        public void Sales(Game game, Gamer gamer)
+        public void Sales(Gamer gamer, Game game)
         {
             Console.WriteLine(gamer.FirstName + game.GameName + "aldı");
         }

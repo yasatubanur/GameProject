@@ -13,10 +13,7 @@ namespace GameProject.Concrete
             Console.WriteLine(campaign.CampaignId + campaign.CampaingnName + campaign.DiscountRate + "eklendi");
         }
 
-        public void Add(Campaign campaign)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public void Delete(Campaign campaign)
         {

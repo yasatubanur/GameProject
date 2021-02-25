@@ -1,5 +1,5 @@
 ﻿using GameProject.Concrete;
-using System
+using System;
     using GameProject.Entities;
 
 namespace GameProject
@@ -9,7 +9,7 @@ namespace GameProject
         static void Main(string[] args)
         {
             NewStateUserValidationManager newStateUserValidationManager = new NewStateUserValidationManager();
-            GamerManager gamerManager = new GameManager(newStateUserValidationManager);
+            GamerManager gamerManager = new GamerManager(newStateUserValidationManager);
             Gamer gamer = new Gamer { NationalityId = "111111", FirstName = "Tuba", LastName = "Yaşa", DateOfBirth = 1998 };
 
             gamerManager.Add(gamer);
